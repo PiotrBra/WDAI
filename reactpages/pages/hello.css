@@ -1,0 +1,28 @@
+.hello-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background-color: black;
+}
+
+.hello-content {
+    text-align: center;
+}
+
+.hello-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.hello-text {
+    color: white;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 4em;
+}
