@@ -1,0 +1,32 @@
+openapi: 3.0.3
+info:
+  description: lab4 API
+  title: lab4 API
+  version: 1.0.0
+servers:
+- url: https://lab4
+paths:
+  /delete/{id}:
+    delete:
+      operationId: deletePerson
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int32
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                type: string
+          description: OK
+      summary: "DELETE delete/{id}"
+      x-accepts: '*/*'
+components:
+  schemas: {}
+
